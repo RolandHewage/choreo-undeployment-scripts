@@ -1,0 +1,19 @@
+# Real component-list CSVs carry production-org metadata — do not commit.
+# sample-component-list.csv in each folder is the committed schema reference.
+component-lists/original/*.csv
+!component-lists/original/sample-component-list.csv
+component-lists/normalized/*.csv
+!component-lists/normalized/sample-component-list.csv
+
+# Timestamped run artefacts from identify / undeploy / redeploy scripts.
+# Attach them to the relevant Change Request instead of committing.
+undeploy-api-revisions/revisions-*.csv
+undeploy-api-revisions/undeploy-results-*.csv
+undeploy-api-revisions/verify-undeploy-results-*.csv
+undeploy-api-revisions/redeploy-results-*.csv
+undeploy-api-revisions/verify-redeploy-results-*.csv
+pause-components/pause-results-*.csv
+pause-components/resume-results-*.csv
+
+# macOS clutter
+.DS_Store
