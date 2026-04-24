@@ -15,5 +15,8 @@ undeploy-api-revisions/verify-redeploy-results-*.csv
 pause-components/pause-results-*.csv
 pause-components/resume-results-*.csv
 
+# Production run outputs kept locally for audit — never committed.
+undeploy-api-revisions/prod-outputs/
+
 # macOS clutter
 .DS_Store
