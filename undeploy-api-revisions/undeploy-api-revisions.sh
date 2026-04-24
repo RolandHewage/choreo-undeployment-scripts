@@ -2,11 +2,11 @@
 
 # APIM Publisher connection details
 APIM_URL=""          # e.g. https://localhost:9443
-APIM_USER=""         # e.g. choreo_dev_apim_admin
+APIM_USER=""         # e.g. choreo_<ns>_apim_admin (choreo_dev_apim_admin / choreo_prod_apim_admin)
 APIM_PASSWORD=""
 
 # Inputs
-INPUT_CSV="$1"       # revisions-<org>.csv from identify step
+INPUT_CSV="$1"       # revisions-<org>-<timestamp>.csv from identify step
 SLEEP_SECONDS=2
 
 ORG=$(awk -F',' 'NR==2 {gsub(/[\"\r]/,""); print $1; exit}' "$INPUT_CSV")

@@ -2,7 +2,7 @@
 
 # APIM Publisher connection details
 APIM_URL=""          # e.g. https://localhost:9443
-APIM_USER=""         # e.g. choreo_dev_apim_admin
+APIM_USER=""         # e.g. choreo_<ns>_apim_admin (choreo_dev_apim_admin / choreo_prod_apim_admin)
 APIM_PASSWORD=""
 
 # Inputs

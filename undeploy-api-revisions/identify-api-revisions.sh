@@ -46,7 +46,7 @@ else
   exit 1
 fi
 
-# Build revisions-<org>.csv (actionable + skipped rows, single file)
+# Build revisions-<org>-<timestamp>.csv (actionable + skipped rows, single file)
 echo "org,component,organizationId,apiId,revisionId,env,vhost,displayOnDevportal,status" > "$OUTPUT_CSV"
 
 grep -E '^[a-fA-F0-9-]+,' "$RESULTS_TMP" | \
